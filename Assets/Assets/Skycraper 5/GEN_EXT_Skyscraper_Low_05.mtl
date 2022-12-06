@@ -1,0 +1,12 @@
+newmtl GEN_EXT_Skyscraper_Low_05_shader
+Ns 9.803922
+Ka 0.588000 0.588000 0.588000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd GEN_EXT_Skyscraper_Low_05.png
+map_Ka GEN_EXT_Skyscraper_Low_05.png
+map_Ke GEN_EXT_Skyscraper_Low_05_emissive.png
