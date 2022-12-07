@@ -15,7 +15,7 @@ Basic Requirements:
     - Skyscrapers
     - UFO
     - Pyramid
-- Controllable Character: The player begins with control of the butterfly, and can start the chain reaction by pushing the flower pot down the ramp. If they miss their shot at starting the reaction, they are given another try. Once the reaction begins, the camera switches to a cinematic view which follows the Rube Goldberg machine to its completion.
+- Controllable Character: The player begins with control of the butterfly, and can start the chain reaction by pushing the flower pot down the ramp. Once the reaction begins, the camera switches to a cinematic view which follows the Rube Goldberg machine to its completion.
 
 Rube Goldberg Requirements:
 - Clear starting interaction: The player pushes the flower pot down the ramp.
