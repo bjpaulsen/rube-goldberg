@@ -34,6 +34,7 @@ public class CameraFollow : MonoBehaviour
             cam.fieldOfView = (to-cam.fieldOfView)/damping+cam.fieldOfView;
             yield return null;
         }
+        
         cam.fieldOfView = to;
     }
 }
