@@ -1,0 +1,38 @@
+Prompt: Rube Goldberg Machine
+
+Description: 
+We created an absurdist Rube Goldberg machine about revealing "the truth" beneath the Great Pyramid of Giza. Starting with the flapping of a tiny butterfly, we gradually escalate the chain reaction in both size and complexity, introducing a pulley system, skyscrapers, and eventually a UFO with a tractor beam which lifts the pyramid. The intentional absurdity of the Rube Goldberg device also serves to comment on the absurdity of conspiracy theories surrounding the Great Pyramid, which are rooted in a racist belief that ancient Africans must have had outside help to build these structures.
+
+Basic Requirements:
+- Particle System: exhaust fumes from the car
+- At least 5 meaningful imported objects:
+    - Butterfly
+    - Flower Pot
+    - Trampoline
+    - Bicycle
+    - Car
+    - House
+    - Skyscrapers
+    - UFO
+    - Pyramid
+- Controllable Character: The player begins with control of the butterfly, and can start the chain reaction by pushing the flower pot down the ramp. If they miss their shot at starting the reaction, they are given another try. Once the reaction begins, the camera switches to a cinematic view which follows the Rube Goldberg machine to its completion.
+
+Rube Goldberg Requirements:
+- Clear starting interaction: The player pushes the flower pot down the ramp.
+- At least 5 intermediate interactions:
+    - Flower pot bounces on the trampoline
+    - Flower pot causes the pulley system to push the bicycle
+    - Bicycle pushes the car and jumpstarts its engine
+    - Car jumps off a ramp and pushes the house off the cliff
+    - House knocks over a skyscraper
+    - Skyscraper knocks into another skyscraper
+    - Skyscraper knocks into another skyscraper
+    - Skyscraper knocks a UFO towards the Great Pyramid
+- Clear outcome: The UFO lifts the pyramid with its tractor beam, revealing the supposed secrets underneath.
+
+Polish Requirements:
+- Interesting objects/materials: We created a surprising and hopefully humorous series of interactions 
+- Sensible lighting that fits the scene
+- No default skybox or basic grey materials: We didn't use the default materials or skybox.
+- Use of post-processing effects
+- Compelling environment: We implemented a background for the scene with a parallax effect to show the machine's motion.
