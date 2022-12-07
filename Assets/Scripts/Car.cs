@@ -27,6 +27,7 @@ public class Car : MonoBehaviour
     {
         if (other.gameObject.tag != "ground")
         {
+            transform.GetChild(0).GetChild(4).gameObject.SetActive(true);
             isAccelerating = true;
         }
     }
