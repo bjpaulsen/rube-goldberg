@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 110764078}
   - component: {fileID: 110764077}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Ramp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -19.44}
 --- !u!1 &118075556
 GameObject:
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 118075558}
   - component: {fileID: 118075557}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Trigger Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -254,6 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 2006674107}
   newFollow: {fileID: 1709414838}
+  newFOV: 60
 --- !u!135 &118075558
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -330,7 +331,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &341182724
 GameObject:
@@ -445,7 +446,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1334086507 stripped
 GameObject:
@@ -501,7 +502,7 @@ GameObject:
   - component: {fileID: 1709414836}
   - component: {fileID: 1709414835}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cube (Second Follow)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -583,7 +584,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17.293}
 --- !u!1001 &1716745875
 PrefabInstance:
@@ -595,7 +596,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f82ae530e742f874285de7dfb34abaf2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f82ae530e742f874285de7dfb34abaf2,
         type: 3}
@@ -665,7 +666,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f82ae530e742f874285de7dfb34abaf2,
         type: 3}
       propertyPath: m_Name
-      value: ObjButterfly
+      value: Butterfly (First Follow)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f82ae530e742f874285de7dfb34abaf2, type: 3}
@@ -786,7 +787,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2006674107
 MonoBehaviour:
@@ -800,8 +801,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2a338296f7444d4d92fe74b4c651619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followTargets:
-  - {fileID: 1334086508}
-  - {fileID: 1709414838}
+  follow: {fileID: 1334086508}
   damping: 200
   defaultFOV: 30

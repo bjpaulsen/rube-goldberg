@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    [SerializeField] Transform[] followTargets;
+    [SerializeField] private Transform follow;
     [SerializeField] private float damping = 200;
-    [SerializeField] private float defaultFOV = 30;
 
-    private Transform follow;
-    private int counter = 0;
     private Camera cam;
 
     // Start is called before the first frame update
     void Start()
     {
-        follow = followTargets[0];
         cam = GetComponent<Camera>();
     }
 
@@ -25,11 +21,8 @@ public class CameraFollow : MonoBehaviour
         transform.position = new Vector3((follow.position.x-transform.position.x)/damping+transform.position.x, (follow.position.y-transform.position.y)/damping+transform.position.y, transform.position.z);
     }
 
-    public void SwitchTo(Transform newFollow, float newFOV = -1)
+    public void SwitchTo(Transform newFollow, float newFOV)
     {
-        // I KNOW I KNOW
-        if (newFOV == -1) newFOV = defaultFOV;
-
         follow = newFollow;
         StartCoroutine(SwitchFOV(newFOV));
     }
