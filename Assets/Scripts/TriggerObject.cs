@@ -24,5 +24,6 @@ public class TriggerObject : MonoBehaviour
             return;
         
         camera.SwitchTo(newFollow, newFOV);
+        triggeredBefore = true;
     }
 }
