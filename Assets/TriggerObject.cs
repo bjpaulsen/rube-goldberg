@@ -9,10 +9,17 @@ public class TriggerObject : MonoBehaviour
     [SerializeField] private float newFOV = 30;
     [SerializeField] private bool onlyTriggerOnce = true;
 
+    [SerializeField] private List<Transform> ignoreTargets;
+
     private bool triggeredBefore = false;
 
-    public void OnTriggerEnter()
+    public void OnTriggerEnter(Collider other)
     {
+        if (ignoreTargets.Contains(other.transform))
+        {
+            return;
+        }
+
         if (onlyTriggerOnce && triggeredBefore)
             return;
         

@@ -30,4 +30,10 @@ public class Car : MonoBehaviour
             isAccelerating = true;
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        isAccelerating = false;
+        this.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+    }
 }
