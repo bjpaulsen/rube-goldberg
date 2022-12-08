@@ -34,5 +34,4 @@ Polish Requirements:
 - Interesting objects/materials: We created a surprising and hopefully humorous series of interactions 
 - Sensible lighting that fits the scene
 - No default skybox or basic grey materials: We didn't use the default materials or skybox.
-- Use of post-processing effects
 - Compelling environment: We implemented a background for the scene with a parallax effect to show the machine's motion.
